@@ -491,6 +491,7 @@ article .different-posts {
   max-width: 100%;
   margin: 0 auto;
   margin-top: 0.5rem;
+  color: #f90;
 }
 .header__link {
   margin: 0 1rem;
@@ -498,21 +499,21 @@ article .different-posts {
 }
 .header__link:hover {
   text-shadow: 0.03em 0 rgba(0,0,0,0), -0.03em 0 rgba(0,0,0,0), 0 0.03em rgba(0,0,0,0), 0 -0.03em rgba(0,0,0,0), 0.06em 0 rgba(0,0,0,0), -0.06em 0 rgba(0,0,0,0), 0.09em 0 rgba(0,0,0,0), -0.09em 0 rgba(0,0,0,0), 0.12em 0 rgba(0,0,0,0), -0.12em 0 rgba(0,0,0,0), 0.15em 0 rgba(0,0,0,0), -0.15em 0 rgba(0,0,0,0);
-  background-image: linear-gradient(#33474d, #33474d);
+  background-image: linear-gradient(#f90, #f90);
   background-size: 1px 1px;
   background-repeat: repeat-x;
   background-position: 0% 95%;
-  color: #33474d;
+  color: #f90;
   text-decoration: none;
   opacity: 1;
 }
 .header__link:hover::selection {
-  text-shadow: 0.03em 0 #33474d, -0.03em 0 #33474d, 0 0.03em #33474d, 0 -0.03em #33474d, 0.06em 0 #33474d, -0.06em 0 #33474d, 0.09em 0 #33474d, -0.09em 0 #33474d, 0.12em 0 #33474d, -0.12em 0 #33474d, 0.15em 0 #33474d, -0.15em 0 #33474d;
-  background: #33474d;
+  text-shadow: 0.03em 0 #f90, -0.03em 0 #f90, 0 0.03em #f90, 0 -0.03em #f90, 0.06em 0 #f90, -0.06em 0 #f90, 0.09em 0 #f90, -0.09em 0 #f90, 0.12em 0 #f90, -0.12em 0 #f90, 0.15em 0 #f90, -0.15em 0 #f90;
+  background: #f90;
 }
 .header__link:hover::-moz-selection {
-  text-shadow: 0.03em 0 #33474d, -0.03em 0 #33474d, 0 0.03em #33474d, 0 -0.03em #33474d, 0.06em 0 #33474d, -0.06em 0 #33474d, 0.09em 0 #33474d, -0.09em 0 #33474d, 0.12em 0 #33474d, -0.12em 0 #33474d, 0.15em 0 #33474d, -0.15em 0 #33474d;
-  background: #33474d;
+  text-shadow: 0.03em 0 #f90, -0.03em 0 #f90, 0 0.03em #f90, 0 -0.03em #f90, 0.06em 0 #f90, -0.06em 0 #f90, 0.09em 0 #f90, -0.09em 0 #f90, 0.12em 0 #f90, -0.12em 0 #f90, 0.15em 0 #f90, -0.15em 0 #f90;
+  background: #f90;
 }
 .header__link:hover *,
 .header__link:hover *:after,
@@ -522,7 +523,7 @@ article .different-posts {
   text-shadow: none;
 }
 .header__link:hover:visited {
-  color: #33474d;
+  color: #f90;
 }
 @font-face {
   font-family: "Noto Sans";
