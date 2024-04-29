@@ -22,8 +22,8 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 70%;
-  height: 55vh;
+  width: 65%;
+  height: 50vh;
   display: block;
   box-sizing: border-box;
   -webkit-filter: saturate(120%);
@@ -38,7 +38,7 @@
   }
 }
 .header__title {
-  font-size: 3rem;
+  font-size: 2.5vw;
   text-align: center;
   color: #f9fafa;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
