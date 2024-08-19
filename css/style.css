@@ -776,7 +776,7 @@ article .different-posts {
   -webkit-backdrop-filter: blur(4px);
 }
 .header__nav {
-  width: auto;
+  width: 50;
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
