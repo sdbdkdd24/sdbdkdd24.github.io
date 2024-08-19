@@ -37,7 +37,6 @@
         Spain</h2>
 </header>
 
-<!--
 <main>
     <article>
         <h1></h1>
@@ -49,125 +48,8 @@
     </article>
 
 </main>
--->
     
-<table>
-        <tr>
-            <td>
-                <h2 style="font-size: 20px">Practical Fairness: An Evaluation of Bias Mitigation Strategies for NLP Applications</h2> 
-                <strong>Bryce E King, Beverly Thompson</strong> 
-<!--                 <a class="btn btn-red" href="camera_ready/multiple.pdf">PDF</a>  -->
-                <br>
-                <u>Abstract</u>: As the use of algorithmic decision-making becomes more widely adopted, there is a growing need for practical strategies to mitigate bias in automated systems, particularly in natural language processing. Due to a lack of standardization, comprehensive evaluation metrics, and real-world evaluation, comparing different mitigation strategies is challenging. In this work, we demonstrate the presence of gender bias when using the large language model (LLM) RoBERTa to classify occupation from text samples similar to LinkedIn bios. We then provide a holistic evaluation of ten bias mitigation strategies applied to a common problem, providing insights into their effectiveness and trade-offs under different constraints. Based on this analysis, we offer guidance for companies on selecting the most suitable strategy for a given circumstance with consideration to computational constraints, metric priorities, and dataset characteristics. This work contributes a consistent assessment of the efficacy and trade-offs of common bias mitigation techniques that could be used in real-world applications as well as a point of comparison for future methodologies.
-            </td>
-        </tr>
 
-        <tr>
-            <td>
-                <h2 style="font-size: 20px"> Fair Data Generation via Score-based Diffusion Model   </h2> 
-                <strong> Yujie Lin, Dong Li, Chen Zhao, Minglai Shao  </strong> 
-<!--                 <a class="btn btn-red" href="camera_ready/multiple.pdf">PDF</a>  -->
-                <br>
-                <u>Abstract</u>: The fairness of AI decision-making has garnered increasing attention, leading to the proposal of numerous fairness algorithms. In this paper, we aim not to address this issue by directly introducing fair learning algorithms, but rather by generating entirely new, fair synthetic data from biased datasets for use in any downstream tasks. Additionally, the distribution of test data may differ from that of the training set, potentially impacting the performance of the generated synthetic data in downstream tasks. To address these two challenges, we propose a diffusion model-based framework, FADM: Fairness-Aware Diffusion with Meta-training. FADM introduces two types of gradient induction during the sampling phase of the diffusion model: one to ensure that the generated samples belong to the desired target categories, and another to make the sensitive attributes of the generated samples difficult to classify into any specific sensitive attribute category. To overcome data distribution shifts in the test environment, we train the diffusion model and the two classifiers used for induction within a meta-learning framework. Compared to other baselines, FADM allows for flexible control over the categories of the generated samples and exhibits superior generalization capability. Experiments on real datasets demonstrate that FADM achieves better accuracy and optimal fairness in downstream tasks.
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <h2 style="font-size: 20px"> Matchings, Predictions and Counterfactual Harm in Refugee Resettlement Processes  </h2> 
-                <strong> Seung Eon Lee, Nina Corvelo Benz, Suhas Thejaswi, Manuel Gomez Rodriguez  </strong> 
-<!--                 <a class="btn btn-red" href="camera_ready/multiple.pdf">PDF</a>  -->
-                <br>
-                <u>Abstract</u>: Resettlement agencies have started to adopt data-driven algorithmic matching to match refugees to locations using employment rate as a measure of utility. Given a pool of refugees, data-driven algorithmic matching utilizes a classifier to predict the probability that each refugee would find employment at any given location. Then, it uses the predicted probabilities to estimate the expected utility of all possible placement decisions. Finally, it finds the placement decisions that maximize the predicted utility by solving a maximum weight bipartite matching problem. In this work, we argue that, using existing solutions, there may be pools of refugees for which data-driven algorithmic matching is (counterfactually) harmful - it would have achieved lower utility than a given default policy used in the past, had it been used. Then, we develop a post-processing algorithm that, given placement decisions made by a default policy on a pool of refugees and their employment outcomes, solves an inverse matching problem to minimally modify the predictions made by a given classifier. Under these modified predictions, the optimal matching policy that maximizes predicted utility on the pool is guaranteed to be not harmful. Further, we introduce a Transformer model that, given placement decisions made by a default policy on multiple pools of refugees and their employment outcomes, learns to modify the predictions made by a classifier so that the optimal matching policy that maximizes predicted utility under the modified predictions on an unseen pool of refugees is less likely to be harmful than under the original predictions. Experiments on simulated resettlement processes using synthetic refugee data created from publicly available sources suggest that our methodology may be effective in making algorithmic placement decisions that are less likely to be harmful than existing solutions.
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <h2 style="font-size: 20px"> Geographical Erasure in Language Generation   </h2> 
-                <strong> Pola Schwöbel, Jacek Golebiowski, Michele Donini, Cedric Archambeau, Danish Pruthi  </strong> 
-<!--                 <a class="btn btn-red" href="camera_ready/multiple.pdf">PDF</a>  -->
-                <br>
-                <u>Abstract</u>: Large language models (LLMs) encode vast amounts of world knowledge. However, since these models are trained on large swaths of internet data, they are at risk of inordinately capturing information about dominant groups. This imbalance can propagate into generated language. In this work, we study and operationalise a form of geographical erasure, wherein language models underpredict certain countries. We demonstrate consistent instances of erasure across a range of LLMs. We discover that erasure strongly correlates with low frequencies of country mentions in the training corpus. Lastly, we mitigate erasure by finetuning using a custom objective.
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <h2 style="font-size: 20px"> POSIT: Promotion of Semantic Item Tail via Adversarial Learning   </h2> 
-                <strong> Qiuling Xu, Pannaga Shivaswamy, Xiangyu Zhang  </strong> 
-<!--                 <a class="btn btn-red" href="camera_ready/multiple.pdf">PDF</a>  -->
-                <br>
-                <u>Abstract</u>: In many recommendations, a handful of popular items (e.g., movies / television shows, news, etc.) can be dominant in recommendations for many users. However, we know that in a large catalog of items, users are likely interested in more than what is popular. The dominance of popular items may mean that users will not see items that they would probably enjoy. In this paper, we propose a technique to overcome this problem using adversarial machine learning. We define a metric to translate user-level utility metric in terms of an advantage/disadvantage over items. We subsequently use that metric in an adversarial learning framework to systematically promote disadvantaged items. Distinctly, our method integrates a small-capacity model to produce semantically meaningful weights, leading to an algorithm that identifies and promotes a semantically similar item within the learning process. In the empirical study, we evaluated the proposed technique on three publicly available datasets and seven competitive baselines. The result shows that our proposed method not only improves the coverage, but also, surprisingly, improves the overall performance.
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <h2 style="font-size: 20px"> AI Safety in Practice: Enhancing Adversarial Robustness in Multimodal Image Captioning   </h2> 
-                <strong> Maisha Binte Rashid, Pablo Rivas  </strong> 
-<!--                 <a class="btn btn-red" href="camera_ready/multiple.pdf">PDF</a>  -->
-                <br>
-                <u>Abstract</u>: Multimodal machine learning models that combine visual and textual data are increasingly being deployed in critical applications, raising significant safety and security concerns due to their vulnerability to adversarial attacks. This paper presents an effective strategy to enhance the robustness of multimodal image captioning models against such attacks. By leveraging the Fast Gradient Sign Method (FGSM) to generate adversarial examples and incorporating adversarial training techniques, we demonstrate improved model robustness on two benchmark datasets: Flickr8k and COCO. Our findings indicate that selectively training only the text decoder of the multimodal architecture shows performance comparable to full adversarial training while offering increased computational efficiency. This targeted approach suggests a balance between robustness and training costs, facilitating the ethical deployment of multimodal AI systems across various domains.
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <h2 style="font-size: 20px"> Improving Fairness in Graph Neural Networks via Counterfactual Debiasing   </h2> 
-                <strong> Zengyi Wo, Chang Liu, Yumeng wang, Minglai Shao, Wenjun Wang   </strong> 
-<!--                 <a class="btn btn-red" href="camera_ready/multiple.pdf">PDF</a>  -->
-                <br>
-                <u>Abstract</u>: Graph Neural Networks (GNNs) have been successful in modeling graph-structured data. However, similar to other machine learning models, GNNs can exhibit bias in predictions based on attributes like race and gender. Moreover, bias in GNNs can be exacerbated by the graph structure and message-passing mechanisms. Recent cutting-edge methods propose mitigating bias by filtering out sensitive information from input or representations, like edge dropping or feature masking. Yet, we argue that such strategies may unintentionally eliminate non-sensitive features, leading to a compromised balance between predictive accuracy and fairness. To tackle this challenge, we present a novel approach utilizing counterfactual data augmentation for bias mitigation. This method involves creating diverse neighborhoods using counterfactuals before message passing, facilitating unbiased node representations learning from the augmented graph. Subsequently, an adversarial discriminator is employed to diminish bias in predictions by conventional GNN classifiers. Our proposed technique, Fair-ICD, ensures the fairness of GNNs under moderate conditions. Experiments on standard datasets using three GNN backbones demonstrate that Fair-ICD notably enhances fairness metrics while preserving high predictive performance.
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <h2 style="font-size: 20px"> Source Echo Chamber: Exploring the Escalation of Source Bias in User, Data, and Recommender System Feedback Loop   </h2> 
-                <strong> Yuqi Zhou, Sunhao Dai, Liang Pang, Gang Wang, Zhenhua Dong, Jun Xu, Ji-Rong Wen   </strong> 
-<!--                 <a class="btn btn-red" href="camera_ready/multiple.pdf">PDF</a>  -->
-                <br>
-                <u>Abstract</u>: Recently, researchers have uncovered that neural retrieval models prefer AI-generated content (AIGC), called source bias.
-Compared to active search behavior, recommendation represents another important means of information acquisition, where users are more prone to source bias. Furthermore, delving into the recommendation scenario, as AIGC becomes integrated within the feedback loop involving users, data, and the recommender system, it progressively contaminates the candidate items, the user interaction history, and ultimately, the data used to train the recommendation models.
-How and to what extent the source bias affects the neural recommendation models within the feedback loop remains unknown.
-In this study, we extend the investigation of source bias into the realm of recommender systems, specifically examining its impact across different phases of the feedback loop.
-We conceptualize the progression of AIGC integration into the recommendation content ecosystem in three distinct phases-HGC dominate, HGC-AIGC coexist, and AIGC dominance-each representing past, present, and future states, respectively.
-Through extensive experiments across three datasets from diverse domains, we demonstrate the prevalence of source bias and reveal a potential digital echo chamber with source bias amplification throughout the feedback loop. This trend risks creating a recommender ecosystem with limited information source, such as AIGC, being disproportionately recommended.
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <h2 style="font-size: 20px"> AnonFair: A Flexible Toolkit for Algorithmic Fairness   </h2> 
-                <strong> Eoin Delaney, Zihao Fu, Sandra Wachter, Brent Mittelstadt, Chris Russell   </strong> 
-<!--                 <a class="btn btn-red" href="camera_ready/multiple.pdf">PDF</a>  -->
-                <br>
-                <u>Abstract</u>: We present AnonFair, a new open source toolkit for enforcing
-algorithmic fairness. Compared to existing toolkits: (i) We support NLP and Computer Vision classification as well as standard tabular problems. (ii) We support enforcing fairness on validation data, making us robust to a wide-range of overfitting challenges. (iii) Our approach can optimize any measure that is a function of True Positives, False Positive, False Negatives, and True Negatives. This makes it easily extendable, and much more expressive than existing toolkits. It supports 9/9 and 10/10 of the group metrics of two popular review papers. AnonFair is compatible with standard ML toolkits including sklearn, Autogluon and pytorch and is available online.
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <h2 style="font-size: 20px"> Enhancing Model Fairness and Accuracy with Similarity Networks: A Methodological Approach   </h2> 
-                <strong> Samira Maghool, Paolo Ceravolo  </strong> 
-<!--                 <a class="btn btn-red" href="camera_ready/multiple.pdf">PDF</a>  -->
-                <br>
-                <u>Abstract</u>: In this paper, we propose an innovative approach to thoroughly explore dataset features that introduce bias in downstream Machine Learning tasks. Depending on the data format, we use different techniques to map instances into a similarity feature space. Our method's ability to adjust the resolution of pairwise similarity provides clear insights into the relationship between the dataset classification complexity and model fairness. Experimental results confirm the promising applicability of the similarity network in promoting fair models. Moreover, leveraging our methodology not only seems promising in providing a fair downstream task such as classification, it also performs well in imputation and augmentation of the dataset satisfying the fairness criteria such as demographic parity and imbalanced classes.
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <h2 style="font-size: 20px"> A Semidefinite Relaxation Approach for Fair Graph Clustering   </h2> 
-                <strong> Sina Baharlouei, Sadra Sabouri   </strong> 
-<!--                 <a class="btn btn-red" href="camera_ready/multiple.pdf">PDF</a>  -->
-                <br>
-                <u>Abstract</u>: Fair graph clustering is crucial for ensuring equitable representation and treatment of diverse communities in network analysis. Traditional methods often ignore disparities among social, economic, and demographic groups, perpetuating biased outcomes and reinforcing inequalities. This study introduces fair graph clustering within the framework of the disparate impact doctrine, treating it as a joint optimization problem integrating clustering quality and fairness constraints. Given the NP-hard nature of this problem, we employ a semidefinite relaxation approach to approximate the underlying optimization problem. For up to medium-sized graphs, we utilize a singular value decomposition-based algorithm, while for larger graphs, we propose a novel algorithm based on the alternative direction method of multipliers. Unlike existing methods, our formulation allows for tuning the trade-off between clustering quality and fairness. Experimental results on graphs generated from the standard stochastic block model demonstrate the superiority of our approach in achieving an optimal accuracy-fairness trade-off compared to state-of-the-art methods.
-            </td>
-        </tr>
-    </table>
 
     
 
