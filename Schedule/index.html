@@ -271,27 +271,16 @@
             var initialContent = this.previousElementSibling;
             var content = this.nextElementSibling;
 
-            if (content && content.style.display === "block") {
-                // Collapse content
+            if (content.style.display === "block") {
+                // If the content is already displayed, collapse it and show the initial content
                 content.style.display = "none";
                 initialContent.style.display = "inline";
                 this.textContent = "Read more";
-            } else if (content && content.style.display !== "block") {
-                // Expand content
+            } else {
+                // If the content is hidden, expand it and hide the initial content
                 content.style.display = "block";
                 initialContent.style.display = "none";
                 this.textContent = "Read less";
-            } else {
-                // Collapse using the button inside the collapsible content
-                var parentContent = this.closest('.collapsible-content');
-                if (parentContent) {
-                    parentContent.style.display = "none";
-                    var initialButton = parentContent.previousElementSibling.querySelector('.collapsible');
-                    if (initialButton) {
-                        initialButton.textContent = "Read more";
-                        initialButton.previousElementSibling.style.display = "inline";
-                    }
-                }
             }
         });
     }
