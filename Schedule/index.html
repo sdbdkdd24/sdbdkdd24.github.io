@@ -276,7 +276,6 @@
                 content.style.display = "none";
                 initialContent.style.display = "inline";
                 this.textContent = "Read more";
-                this.parentElement.querySelector('.collapsible-content').style.display = "none";
             } else if (content && content.style.display !== "block") {
                 // Expand content
                 content.style.display = "block";
@@ -284,15 +283,20 @@
                 this.textContent = "Read less";
             } else {
                 // Collapse using the button inside the collapsible content
-                var parentContent = this.parentElement;
-                parentContent.style.display = "none";
-                var initialButton = parentContent.previousElementSibling;
-                initialButton.previousElementSibling.style.display = "inline";
-                initialButton.textContent = "Read more";
+                var parentContent = this.closest('.collapsible-content');
+                if (parentContent) {
+                    parentContent.style.display = "none";
+                    var initialButton = parentContent.previousElementSibling.querySelector('.collapsible');
+                    if (initialButton) {
+                        initialButton.textContent = "Read more";
+                        initialButton.previousElementSibling.style.display = "inline";
+                    }
+                }
             }
         });
     }
-    </script>
+</script>
+
 
     
 
