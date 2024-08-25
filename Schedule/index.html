@@ -95,13 +95,12 @@
                     <strong>Prof. Feida ZHU</strong>, Associate Professor and the Associate Dean of Singapore Management University, Singapore
             
             <br>
-<span class="initial-content"><u>Abstract</u>: In the rapidly evolving landscape of blockchain and decentralized finance (DeFi), the analysis of onchain data has emerged as a critical tool...</span>
-
-<div class="collapsible-content" style="display: none;">
-    Abstract</u>: In the rapidly evolving landscape of blockchain and decentralized finance (DeFi), the analysis of onchain data has emerged as a critical tool for understanding and optimizing digital ecosystems. This talk will provide an overview of onchain data analytics, highlighting its significance in driving transparency, security, and efficiency within decentralized networks. The talk will explore how onchain data analytics sheds insight into the decentralization of token distribution from an asset perspective. By examining case studies, we will delve into practical applications where onchain analytics has played a pivotal role in early fraud detection, identifying malicious activities before they can compromise the integrity of the network. Additionally, we will discuss how intention analysis, powered by onchain data, can provide valuable insights into user behavior, aiding in the development of more secure and user-centric blockchain applications.
-    <br><br>
-    <button type="button" class="collapsible">Read less</button>
-</div>
+            <span class="initial-content"><u>Abstract</u>: In the rapidly evolving landscape of blockchain and decentralized finance (DeFi), the analysis of onchain data has emerged as a critical tool...</span>
+            <button type="button" class="collapsible">Read more</button>
+            <div class="collapsible-content" style="display: none;">
+                Abstract</u>: In the rapidly evolving landscape of blockchain and decentralized finance (DeFi), the analysis of onchain data has emerged as a critical tool for understanding and optimizing digital ecosystems. This talk will provide an overview of onchain data analytics, highlighting its significance in driving transparency, security, and efficiency within decentralized networks.  The talk will explore how onchain data analytics sheds insight into the decentralization of token distribution from an asset perspective. By examining case studies, we will delve into practical applications where onchain analytics has played a pivotal role in early fraud detection, identifying malicious activities before they can compromise the integrity of the network. Additionally, we will discuss how intention analysis, powered by onchain data, can provide valuable insights into user behavior, aiding in the development of more secure and user-centric blockchain applications.
+                <br><br>
+            </div>
             </td>
         </tr>
     </table>
@@ -287,24 +286,24 @@ He currently works on research and product development of information security, 
 
 <script>
     var coll = document.getElementsByClassName("collapsible");
-for (var i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        var initialContent = this.closest('td').querySelector('.initial-content');
-        var content = this.closest('td').querySelector('.collapsible-content');
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            var initialContent = this.previousElementSibling;
+            var content = this.nextElementSibling;
 
-        if (content.style.display === "block") {
-            // Collapse content and show the initial content
-            content.style.display = "none";
-            initialContent.style.display = "inline";
-            this.textContent = "Read more";
-        } else {
-            // Expand content and hide the initial content
-            content.style.display = "block";
-            initialContent.style.display = "none";
-            this.textContent = "Read less";
-        }
-    });
-}
+            if (content.style.display === "block") {
+                // If the content is already displayed, collapse it and show the initial content
+                content.style.display = "none";
+                initialContent.style.display = "inline";
+                this.textContent = "Read more";
+            } else {
+                // If the content is hidden, expand it and hide the initial content
+                content.style.display = "block";
+                initialContent.style.display = "none";
+                this.textContent = "Read less";
+            }
+        });
+    }
 </script>
 
 
