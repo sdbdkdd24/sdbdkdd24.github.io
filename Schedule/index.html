@@ -99,6 +99,8 @@
             <button type="button" class="collapsible">Read more</button>
             <div class="collapsible-content" style="display: none;">
                 ...for understanding and optimizing digital ecosystems. This talk will provide an overview of onchain data analytics, highlighting its significance in driving transparency, security, and efficiency within decentralized networks. The talk will explore how onchain data analytics sheds insight into the decentralization of token distribution from an asset perspective. By examining case studies, we will delve into practical applications where onchain analytics has played a pivotal role in early fraud detection, identifying malicious activities before they can compromise the integrity of the network. Additionally, we will discuss how intention analysis, powered by onchain data, can provide valuable insights into user behavior, aiding in the development of more secure and user-centric blockchain applications.
+                <br><br>
+                <button type="button" class="collapsible">Read less</button>
             </div>
             </td>
         </tr>
@@ -262,23 +264,31 @@
 
 
 
-    <script>
+<script>
     var coll = document.getElementsByClassName("collapsible");
     for (var i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
             var initialContent = this.previousElementSibling;
             var content = this.nextElementSibling;
 
-            if (content.style.display === "block") {
-                // If the content is already displayed, collapse it and show the initial content
+            if (content && content.style.display === "block") {
+                // Collapse content
                 content.style.display = "none";
                 initialContent.style.display = "inline";
                 this.textContent = "Read more";
-            } else {
-                // If the content is hidden, expand it and hide the initial content
+                this.parentElement.querySelector('.collapsible-content').style.display = "none";
+            } else if (content && content.style.display !== "block") {
+                // Expand content
                 content.style.display = "block";
                 initialContent.style.display = "none";
                 this.textContent = "Read less";
+            } else {
+                // Collapse using the button inside the collapsible content
+                var parentContent = this.parentElement;
+                parentContent.style.display = "none";
+                var initialButton = parentContent.previousElementSibling;
+                initialButton.previousElementSibling.style.display = "inline";
+                initialButton.textContent = "Read more";
             }
         });
     }
