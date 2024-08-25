@@ -97,7 +97,7 @@
             <br>
             <u>Abstract</u>: <span class="initial-content">In the rapidly evolving landscape of blockchain and decentralized finance (DeFi), the analysis of onchain data has emerged as a critical tool...</span>
             <button type="button" class="collapsible">Read more</button>
-            <div class="collapsible-content">
+            <div class="collapsible-content" style="display: none;">
                 ...for understanding and optimizing digital ecosystems. This talk will provide an overview of onchain data analytics, highlighting its significance in driving transparency, security, and efficiency within decentralized networks. The talk will explore how onchain data analytics sheds insight into the decentralization of token distribution from an asset perspective. By examining case studies, we will delve into practical applications where onchain analytics has played a pivotal role in early fraud detection, identifying malicious activities before they can compromise the integrity of the network. Additionally, we will discuss how intention analysis, powered by onchain data, can provide valuable insights into user behavior, aiding in the development of more secure and user-centric blockchain applications.
             </div>
             </td>
@@ -266,16 +266,19 @@
     var coll = document.getElementsByClassName("collapsible");
     for (var i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
-            // Hide the initial content and button
-            this.previousElementSibling.style.display = 'none';
-            this.style.display = 'none';
-
-            // Show the collapsible content
+            var initialContent = this.previousElementSibling;
             var content = this.nextElementSibling;
+
             if (content.style.display === "block") {
+                // If the content is already displayed, collapse it and show the initial content
                 content.style.display = "none";
+                initialContent.style.display = "inline";
+                this.textContent = "Read more";
             } else {
+                // If the content is hidden, expand it and hide the initial content
                 content.style.display = "block";
+                initialContent.style.display = "none";
+                this.textContent = "Read less";
             }
         });
     }
